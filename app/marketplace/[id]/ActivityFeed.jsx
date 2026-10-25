@@ -1,7 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { CONTRACT_ID, NETWORK, SOROBAN_RPC_URL } from "@/lib/config";
+import { CONTRACT_ID, NETWORK } from "@/lib/config";
+import { RPC_URL as SOROBAN_RPC_URL } from "@/lib/stellar/rpc";
 import { eventMatchesInvoice, fetchEscrowActivity } from "@/lib/escrow-activity";
 
 async function latestLedger() {
